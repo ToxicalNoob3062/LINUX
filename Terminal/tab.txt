@@ -1,0 +1,5 @@
+use (tab) to auto complete
+press (tab twice) to show all possible options for that auto complete
+write (few more letters) to get a match to one of the options and then press tab for (auto complete)
+tab autocompletion (do not work) if you did any wrong!
+so using autotab can save you from (deleting a whole directory) when you were wanting to just delete a specific file of that folder!

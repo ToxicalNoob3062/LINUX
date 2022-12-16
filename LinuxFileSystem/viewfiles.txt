@@ -1,0 +1,16 @@
+(cat -n) command to view content of a file with lines!
+
+(cat file1 file2 ... > filen.txt) will concat all the files serially in a single file!
+
+(less file) to view the less of a big file and then manupulate this big file using man page shortcuts.
+
+you can also use (more file) to check how many % of file is displayed until now on the screen.
+
+(tail file) displays last 10 lines.
+(tail -n num file) displays last n lines
+
+(tail -nf num file) to watch over the changes in those last n-lines in real time.
+
+replacing (tail) with (head) will tell us about the first n lines!
+
+(watch -n num -d file) use this watch command to view changes in whole file in realtime after every num sec!

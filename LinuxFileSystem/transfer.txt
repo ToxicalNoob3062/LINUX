@@ -1,0 +1,34 @@
+Creating:
+make nesting folders using (mkdir -p nestedpath)
+use (touch) to create files
+
+Copying:
+
+(cp src-file dest-file) will copy the data of src file and overwrite it to destfile.
+add (-i) to ask before overwriting will help us to remember that same file already exists.
+
+(cp -i file1 file 2 file 3 dir/) will save all 3 files in dir
+
+(cp -R dir1 dir2) will copy dir1 in dir2 recursively.
+
+awlays use (-p) to preserve (auth and timestamp cred) and avoid (overwriting accidents) while (copying and creating) files or dir
+
+Move and Renaming :
+(mv -i (file1 file2 file3) dir) will move all 3 files in the dir.
+(mv -i (dir1 dir2 dir3)    dir) will move all 3 dir in the dir.
+use (-u) to only move if its possible to move without overwriting!
+
+keep the src and destination path same to rename using mv.
+(mv dir/name dir/rename)
+
+move a file and rename at the same timestamp
+(mv dir/fname dir/dir2/f-rename)
+
+Removing:
+file-> (rm -i file)
+dir->  (rm -iR dir)
+
+Removing data safely:
+(shred -vun num file or dir) num indicates show many times data to be over-written. this only works for file.
+
+(srm -vr path ) will delete your directory and also overwrite it with random data.

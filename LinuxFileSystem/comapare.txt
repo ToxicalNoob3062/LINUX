@@ -1,0 +1,18 @@
+we can compare files in linux by using (cmp file1 file2 and so-on)
+will provide the line number in which all the files differ.
+
+instead of cmp we can also use sha256sum and diff !
+
+diff outputs!
+This signs will instruct us how to make both files same.
+c->replace, d->delete, a->append
+< ->firstfile 
+> ->secondfile
+
+diff options! This options will instruct diff command to compare  both files maintaining some conditions!
+-B ignore blanklines
+-w ignore whitespaces
+-i ignore casedifferrences
+-c more detailed comparision
+-y side by side comparision
+

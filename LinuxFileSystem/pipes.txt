@@ -1,0 +1,12 @@
+command1 _pipe|___ > command2
+the output of command one is the input of command2
+and the output of any command is nothing but a text.So this text can be treated as a txt file! So you can do everything with this text using linux commands by caching it with pipe.
+
+(ex1 -> ls path | head | tail -3) will display the 8th 9th and 10th line of the file! such as:
+(ls -nlSh ./LinuxFileSystem/ | nl | head | tail -3)
+piping with (nl) will add serial numbers to the output lines.
+
+use (grep -a "pattern") command to search a word in a text and return those lines which contained that word.
+use (-c) for counting number of lines provided by grip.
+
+use (wc) command to count lines(-l) / words(-w) / char(-c) present in supplied output.

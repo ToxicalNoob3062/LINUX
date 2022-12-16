@@ -1,0 +1,22 @@
+you can do all kind of complex searching using (grep) command in a file. (grep opt pattern file)
+
+(-i) case insensitive
+(-n) to print out line number
+(-w) to search for whole words
+(-v) show lines that do not match that pattern
+(-a) to search in binary files
+(-R) to search a pattern recusively in all files in a dir
+(-s) to avoid unreadable files in output
+(-c) to get the number of lines given as output
+(-A n) show n lines after the firstmatch
+(-B n) show n lines before the firstmatch
+(-C n) show n lines before & after the firstmatch
+
+use (sort) command to sort by name inascending order
+and (sort -r) for descending order.
+
+(strings binaryfile) extracts all string from a binary file
+
+
+
+

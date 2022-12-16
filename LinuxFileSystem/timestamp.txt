@@ -1,0 +1,24 @@
+Users can view timestamps using (ls) command or (stat) command.
+
+modified or mtime ls -l
+changed or ctime  ls -lc
+access  or atime  ls -lu
+
+if you add (-t) with above commands then it will sort the files according to that time stamp!
+
+add (--full-time ) as option for seeing full time with ls command
+
+(stat) displays all the three time stamps at the same time.
+
+update filestimestamps to currentstamps!
+(touch -a) updates access time
+(touch -m) updates modified time
+(touch -d) updates both atime and mtime at the same time!
+
+(touch -option -t (ymdh.s) file) 
+changes the filetime to a specific date!
+
+(touch file1 -r file2) 
+file1 timestamps will be updated with file2 timestamps
+
+(date) command to get the date!

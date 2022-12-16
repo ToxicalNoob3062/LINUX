@@ -1,0 +1,12 @@
+learn about MAN in linux!
+
+1->(man command) this will open the manual page for a command.
+2->type h to get all navigation shortcuts for navigating MAN page!
+3->q to quit or come back
+4->two types of command 1)shell inbuilt 2)shell script
+5->check the types of command (type dm) will find the type of dm comand.
+6->MAN only works for shell script commands
+7->(command --help) works for both command
+8->(help commmand) Only works for inbuilt commands
+9->(man -k "string") will search the string in all MAN pages
+10->man -k and apropos does the same thing!

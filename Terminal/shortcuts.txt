@@ -1,0 +1,11 @@
+shortcuts for terminal
+
+1) (ctrl + L) clears the terminal
+2) (ctrl + D) closes the bash shell
+3) (ctrl + A) to move the cursor to the beginning of the Line.
+4) (ctrl + E) to move to the last of the Line
+5) (ctrl + U) to clear the Line
+6) (ctrl + C) interupts the command from between from executing
+7) (ctrl + Z) to pause the command execution
+8) (bg %Slno) to resume command execution 
+9) (sed -i '$d' my_file) deletes last line of any file.

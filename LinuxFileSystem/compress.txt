@@ -1,0 +1,17 @@
+tar options!
+-c creates an archive
+-x extracts the archive
+-d display the content of archive.
+-z includes gzip compression while archiving
+-v shows the archiving process
+-j compresses using bzip algorithm!
+-t show the content of compressed file
+(-f path/filename ) to specify where to save the compressed file .
+
+compressing->(sudo tar -c(z or j)vf /path/fname.tar.(gz or bz2) (folders or files to be compressed separated by space));
+
+zip files excluding specific files from directories!
+(--exclude="*.mkv") add these after tar as option to exclude a specific file type.
+
+replace (c with x) for extracting the file.
+(tar -xzvf compressedfile -C path_where_to_extract).

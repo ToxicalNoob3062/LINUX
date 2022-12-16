@@ -1,0 +1,9 @@
+(sudo su) to switch to super user!
+(sudo su -) to switch to super user and go to root directory!
+(Ctrl+D or exit ) to exit root mode.
+sudo caches the password for 5 mins and it will restrat 5 mins once again when sudo is used!
+(sudo -k ) deletes the credentials before 5 mins is over
+(sudo -v)  updates user cred for sudo  caching!
+(sudo passwd username) to change the password
+(HISTCONTROL) set this variable to ignoreboth to ignore spaces and duplicates!
+execute command with a (starting white space) so that command is not saved in history!

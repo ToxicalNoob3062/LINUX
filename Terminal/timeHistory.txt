@@ -1,0 +1,4 @@
+set the history file time format->(HISTTIMEFORMAT="%d/%m/%y %T")
+to set the setting permerantly->
+(echo "HISTTIMEFORMAT="%d/%m/%y/ %T"" >> .bashrc)
+If you use this you can see the execution time of your command in your history.

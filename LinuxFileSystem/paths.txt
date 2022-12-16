@@ -1,0 +1,7 @@
+~ ->indicates home directory!
+/ ->indicates root directory!
+aboslute paths starts with / in linux
+relative path do no start with /
+use (pwd) command to check your current working dir!
+. represents current dir
+..represents parent dir

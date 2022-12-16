@@ -1,0 +1,10 @@
+files with no extentions:
+executable files
+
+.log->logfile
+.conf->configuration file
+
+(ls -F) will add symbols at the endof file to represent file type
+(file filename) will tell you the actual filetype.
+(file dir*) will show you all the file type of the dir.
+

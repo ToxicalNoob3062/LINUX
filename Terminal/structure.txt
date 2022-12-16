@@ -1,0 +1,10 @@
+Linux Command Structure
+
+(ping -c 1 8.8.8.8)
+the basic command structre:command -option optionvalue arguement
+
+(ls -l -h -all directory-relative-path)
+you can also use more than one option
+
+(ls -lh -all directory-relative-path)
+you can attach one letter options together!

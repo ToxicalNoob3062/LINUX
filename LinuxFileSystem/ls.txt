@@ -1,0 +1,20 @@
+important options for ls command.
+
+-l shows files with long listing datas
+-d shows only the specified directory
+-a to show hidden files starting with a dot(.)
+
+-h shows us the file sizes in human readbale format
+ (use it with -l to work)
+
+-S sorts file in decending order based on size
+-r indicates reversing the output.
+-lsrS sort file in ascending order based on size;
+(sudo du -sh folder) shows actual directory size
+
+-X to sort by extensions or filetype.
+
+(--hide=*.filetype) to exclude from listing that type of file.this will not work if you use it with (-a)
+
+-R list directory recursively
+

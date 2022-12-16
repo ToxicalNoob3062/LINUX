@@ -1,0 +1,13 @@
+open history file->cat .bash_history
+history file size check on disk-> echo $HISTFILESIZE
+history file size check on memory-> echo $HISTSIZE
+to check all previous commands->(history)
+to run command of specific history number->!number
+to run the last command-> !! 
+last nth command->! -n
+last used x command type->!x-command
+search in history file-> Ctrl + R + search + enter
+exit history search mode->Ctrl+G
+delete a specifc command from history->history -d -number
+clear history-> history -c
+ 

@@ -1,0 +1,21 @@
+(command > filename.format) to save the output in a file!
+if the file isnt present it creates that file otherwise its overwrite that file!use >> to append instead of overwrite.
+
+The terminal can also be used as a file.Get Terminal file path->(tty)
+
+show output in one terminal from other->(command > termialpath)
+
+stdout->1 & stderr->2. We can use this numbers in command to handle this two cases separately!
+(command >output.txt 2>error.txt), (> or 1>) is samething.
+
+sometimes one command can produce both output and error at the same time! (tail -n 2 /etc/passwd /etc/shadow)
+
+appending both cases in same file->(tail -n 2 /etc/passwd /etc/shadow >> all.txt 2>&1) , for overwriting use > istead of >>
+
+(cut -d"" -f"num") splits all lines with delimeter and num indicates the serial number of the word separated by delimeter!
+
+if we want to see the output in terminal and also save it on file at the same time we will need (tee) command piped with main command.
+tee only works with stdout.
+
+(command | tee file.txt)    will overwrite and 
+(command | tee -a file.txt) will append to file

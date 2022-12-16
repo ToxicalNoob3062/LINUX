@@ -1,0 +1,46 @@
+            <-----using (locate) command----->
+use (updatedb) to update the database used by mlocate! because the mlocate library creates it's own database for faster file finding operations!
+
+Thats why file is easily found using mlocate than normal find!
+
+get the database address of mlocate by running (locate -S)
+
+(w !sudo tee % > /dev/null) use it inside vim to edit readonly file.
+
+use (which -a command) to get the path of the executable command.
+
+(sudo updatedb -U foolderpath) will add the paths of the folder and overwrite the database and then we can also search paths related to that folder.
+
+(locate str) will return all absolute paths from db containing that str.
+
+(locate -b str) will return paths which have this str as the basename. if you use ("/str") then it will go for exact match instead of searching if str pattern is included in basename.
+
+(locate -i) to search being case insensitive
+
+(locate -r) to search maintaing a regex pattern.
+such as:"^shadow.[0-9]" is a regex pattern.
+
+(/nest/nest/nest/basename) the last one is indicated as basename.
+
+           <-----using (find) command----->
+(find dir) will find the file in dir maintaing option.
+(-name file) find using name casesensitive.
+(-iname) find using name but case insensitive'
+(-size (k or M)) find using file size
+(-maxdepth level) to determine recursive level of find . 
+
+adding (-delete) to end of find command will find and delete at same time.
+
+adding (-ls) to end of find command will find given directories and apply ls on each directory automatically.
+
+(find dir -type (f or d)) will search a specific filetype in dir.
+
+for searching by (time owner or group) see the (man page) of find.
+
+
+            __FIND and execute at same time___
+
+(-exec command ({}) (\;)) adding this option will help us to execute a specific command on all found files where we replace the filename part of command with {} and end the command with \; here the command can be any (file related) command related to Linux File System.
+
+(-ok) if we replace (-exec) and write it with -ok then it will become interactive and ask user for each file.
+
