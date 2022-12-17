@@ -9,3 +9,4 @@ shortcuts for terminal
 7) (ctrl + Z) to pause the command execution
 8) (bg %Slno) to resume command execution 
 9) (sed -i '$d' my_file) deletes last line of any file.
+10) (command1 $(command2 $(command3))) command2 depends on command 3 and command1 depends on command2 ! by this way you can you recursive command chaining from left to right.

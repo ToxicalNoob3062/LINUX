@@ -1,0 +1,46 @@
+(vi file) open the file in vim editor
+options
+
+(-o) will split windows (upp and down) for sidebyside its (-d) for mutiple files.and (ctrl + w) to swap between files.
+
+
+3 modes of operation we can do in vim
+
+command:
+use (esc) to activate command mode
+x will delete the char
+r will replace the char
+
+insert:
+press (i) to activate insert mode
+press (I) will take cursor at beginning
+press (a) will enter writings after cursor 
+press (A) to take curssor to end of current line
+press (o) to write a text below current line in a new line.
+press (O) to write a text above current line in a new line.
+
+lastline:
+acces this mode by activating command mode and then type (:) key.
+q! -> close file without saving
+w! -> save  file without closing
+wq! or (shift + zz)-> saves and closes the file 
+(! command ) to run any command in vim mode.
+
+# -> to search for previous occurance of word in file
+* -> to search for next occurance of word in file
+(N or n) -> to go upp or down through search done by using (/ or ?)
+(%s/word1/word2) -> to replace all occurances of word1 with word2
+(e!) undo to last save.
+(num) will take cursor to that line.
+(set nu) to display line numbers and (set nonu) to 
+remove numberlining
+(n) to go to next file if multiple files are openned.
+
+keyboard shortcuts.
+press (u) to undo changes and (ctrl + r) for redo.
+press (dd) to cut a line.
+press (p) for pasting after cursor and (P) for pressing before.
+press (V) to select a line and (arrows) to define a selection.
+press (y) to copy
+
+write (n dd) to cut n lines after cursor.
