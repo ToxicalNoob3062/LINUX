@@ -2,6 +2,9 @@ Creating:
 make nesting folders using (mkdir -p nestedpath)
 use (touch) to create files
 
+(ad linux/{centos/{updates/"latest.",command.txt,security.txt},ubuntu/apt.txt}) 
+use (ad) for making advanced dir mixing files and director at a time. {} this express what will go inside a specific folder of nested dir.
+
 Copying:
 
 (cp src-file dest-file) will copy the data of src file and overwrite it to destfile.

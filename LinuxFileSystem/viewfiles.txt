@@ -9,8 +9,8 @@ you can also use (more file) to check how many % of file is displayed until now 
 (tail file) displays last 10 lines.
 (tail -n num file) displays last n lines
 
-(tail -nf num file) to watch over the changes in those last n-lines in real time.
+(tail -fn num file) to watch over the changes in those last n-lines in real time.
 
 replacing (tail) with (head) will tell us about the first n lines!
 
-(watch -n num -d file) use this watch command to view changes in whole file in realtime after every num sec!
+(watch -n num -d command) use this watch command to view changes made by the command in every num sec.

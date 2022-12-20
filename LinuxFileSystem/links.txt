@@ -1,0 +1,10 @@
+hard links and inode:files reserve memory on disk by a inode number and file names are just refferenced to it!
+
+(find dir -inum nodenumber) will provide you all the present file connected to that node in that dir.
+(find dir -links +-=n) here n indicates link number.
+(ln file1 fil2e) will link fil2 with fil1
+
+symlinks are nothing but directory shortcuts!
+(ln -s src des) to create a symlink
+symlink will not work if main file path is changed because the symlink just a referrence or copy of that directory path!
+

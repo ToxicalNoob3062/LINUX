@@ -11,6 +11,8 @@ you can do all kind of complex searching using (grep) command in a file. (grep o
 (-A n) show n lines after the firstmatch
 (-B n) show n lines before the firstmatch
 (-C n) show n lines before & after the firstmatch
+(-e "\.ext$") to search a file with extension.
+
 
 use (sort) command to sort by name inascending order
 and (sort -r) for descending order.

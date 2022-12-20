@@ -27,7 +27,10 @@ such as:"^shadow.[0-9]" is a regex pattern.
 (-name file) find using name casesensitive.
 (-iname) find using name but case insensitive'
 (-size (k or M)) find using file size
-(-maxdepth level) to determine recursive level of find . 
+(-maxdepth level) to determine recursive level of find .
+(-not) reverse the result
+(-user root) find the files owned by root.
+ 
 
 adding (-delete) to end of find command will find and delete at same time.
 

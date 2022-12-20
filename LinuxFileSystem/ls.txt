@@ -13,6 +13,7 @@ important options for ls command.
 (sudo du -sh folder) shows actual directory size
 
 -X to sort by extensions or filetype.
+(-1) to display res in single column instead of mutiple column outputs.
 
 (--hide=*.filetype) to exclude from listing that type of file.this will not work if you use it with (-a)
 
