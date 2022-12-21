@@ -1,0 +1,3 @@
+(groupadd groupname) create new group
+(groupmod -n newname oldname) change group name
+(groupdel groupname) deletes the group

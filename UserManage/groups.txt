@@ -1,0 +1,5 @@
+groups are found in /etc/groups
+groups are of two types-> primary and secondary
+(groups) command will print all the groups current user is joined with
+(groups user) will print all groups user is connected to.
+(id) command will show current  users id primary group and secondary groups. #user id and primary group id are always same

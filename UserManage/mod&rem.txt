@@ -1,0 +1,8 @@
+# to modify user props
+(usermod) this command is used with all the same options of user add to change the values of those options through new arg;
+(-G) will overwrite new groups and erase previous. so add (-a) to append the groups with existing.
+#remove of users
+(userdel username) will remove the account and also its groups if those groups are not belonged to any other user.
+but its home dir still remains to delete including home dir add (-r) option.
+
+

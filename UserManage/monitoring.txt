@@ -1,0 +1,7 @@
+(whoami) will show effective user id.
+(who) will show real user id
+(id) prints effective user and its group;
+(w) provides a list of who is logged in
+(last) provides a list of last logged in user
+(su user) to switch user.
+

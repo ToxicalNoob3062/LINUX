@@ -1,0 +1,23 @@
+#create users in linux
+(useradd options username) command to add user
+(-m) ensure to add user to home directory by username
+(-d "path")ensure to add user to any specific dir with any specific name.
+(-c "str") write some comment about the newly created user.
+(-s shellpath) will launch this shell automatically when user logins from
+shell path such as: (/bin/bash)
+(-G grp1,grp2,grp...) will add those groups as secondary groups to the user.
+(-e yy-mm-dd) sets expiration date for new command.
+
+#pass modification.
+(passwd user) to change password or add it.
+
+# displaying pasword related info -> 
+(chage -l username)
+
+#create the user admin
+(sudo usermod -aG sudo username) give the user administration purposes
+this means appending sudo to the secondary group list will provide the permissions to user.
+
+
+
+
