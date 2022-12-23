@@ -1,0 +1,16 @@
+umask is used to set the base permissions structure when a new file or dir is created .
+
+inside linux system 
+default->0666 for files
+default->0777 for dir
+
+how permissions is set? (default - umask = present displayed permission)
+so by changing the umask displayed permission will be changed.
+
+for files: (s.r.w.x)
+0666-0002=  0664
+0777-0002=  0775
+
+commands:
+umask ->to see current value
+umask interger -> to change current value

@@ -1,0 +1,11 @@
+change-owner:
+(chown ownername (file or dir))
+1)to change owner you need to be root even if you are the owner.
+2)you can also change owner using (uid) that you will get from (/etc/passwd) or (id) command
+3)there is a possibility of collision with username and userid so try to use +uid with chown to avoid collision.
+4) (chown ownername:groupname file) will change both owner and group name.
+
+5) use -R option to change owner of a dir and everything inside it.
+
+change-group:
+(chgrp grpname (file or dir))

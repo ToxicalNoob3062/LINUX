@@ -1,0 +1,13 @@
+GUID:
+
+for dir:
+this helps to create shared directory.Which means if GUID is set on a dir then when the user creates a file or a dir in that dir the group of that file will be automatically set to that dir group id instead of primary group id of the users who have created it!
+(chmod g+s or 2--- dir)
+
+for file:
+
+let cat executabble permisions -> rwxr-s-rx root shadow
+and shadow file permissions ->    rw-r---- root shadow
+and current user be rahat with group daemon.
+
+so now when we run (cat command) due to (s bit on) for group daemon gets replaced with command file group and become shadow and this shadow group can open the file /etc/shadow because this file also have read permission for shadow group.

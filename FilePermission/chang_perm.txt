@@ -1,0 +1,19 @@
+(chmod (u/g/o) (+/-/=)(r/w/x) file) this command will (add remove or set) a specific permission (r w or x) to the (user group or others) triplet;
+
+u can use this options in combination and by separating  them by coma.
+(chmod ug-r,u+x,o-rwx file)
+
+instead of (u g o) use a for changing all 3 categories permissions at a time
+(chmod a-r,a+wx file)
+
+use (=) sign to directly set the valu of u g and 0
+(chmod u=rw,g=rx,o= file) -> - rw- r-x ---
+
+using octal
+(chmod octal file)
+
+changing all files in a dir at a time
+(chmod -R octal dir)
+
+transfer the permission of one file to another
+(chmod --reference=srcfile dest-file)

@@ -26,7 +26,8 @@ such as:"^shadow.[0-9]" is a regex pattern.
 (find dir) will find the file in dir maintaing option.
 (-name file) find using name casesensitive.
 (-iname) find using name but case insensitive'
-(-size (k or M)) find using file size
+(-size (k or M)) find using file size (+/-/=) available
+(-perm (octal notation of file permission)) (+/-/=) available
 (-maxdepth level) to determine recursive level of find .
 (-not) reverse the result
 (-user root) find the files owned by root.

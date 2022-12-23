@@ -1,0 +1,21 @@
+SUID:(s or S) on user triplet's (x) place.
+when someone acces a file that has suid then that file follows the permission of owner instead of the user who ran the command.This is given to those type of file which are needed to be executed by anoyone in sytem for a purpose.such as (-rwsr-xr-x 1 root root 59976 Nov 24 18:05 /usr/bin/passwd)
+or in octal it  will have a (4---) for special permissions.
+
+(chmod 4rwx (dir or file))->activate suid permissions for that file.
+(chmod u+s  (dir or file))->activate suid permissions for that file.
+
+if (s and x both exists)->its becomes s after modifcation.
+if (only s exists)-> it becomes S after modification.
+because the (suid) modify the (x) place of user and sits there.
+
+example:
+cat /etc/shadow ->acces denied if not root for other users
+after adding suid to cat command file-> cat /etc/shadow 
+grant other users to execute the file with owner permission which is root.
+
+let cat executabble permisions -> rws-rx-rx root root
+and shadow file permissions ->    rw-r---- root shadow
+and current user be rahat with group daemon.
+
+so now when we run (cat command) due to (s bit on) for user rahat gets replaced with command file owner (user root) and this (root user) can open the file /etc/shadow because root is also the (owner of shadow file).

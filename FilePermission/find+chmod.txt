@@ -1,0 +1,4 @@
+applying same permission on all files
+find all files inside a dir and then exec chmod for every files to setup same permissions
+
+(find dir -type f -exec chmod octal {} \;)

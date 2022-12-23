@@ -1,0 +1,16 @@
+3 special permssions: for scripts or (executable)
+scripts must be readable and executable but compiled programs need only be executable.
+
+NOTE: (this permission only have effect on execution filed or x and will not show any effect for read and write)
+
+1)SUID 
+  i)get executed with owners user previlages
+
+2)SGID 
+  i)creates shared group when set on a dir (set created file or dir group name to the parent dir automatically)
+  ii)get executed with owners group privelages
+
+3)Sticky Bit
+  i)stop deleting files inside a dir which user dont have permissions
+
+

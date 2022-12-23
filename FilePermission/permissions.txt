@@ -1,0 +1,10 @@
+type (ls -l file) to see the file permissions to see file permissions in symbolic notation.
+
+- (rw-) (r--) (r--) the persmission is denoted like this symbol
+(the first hypen indicates file type symbols and not used for permissions)
+it has three triplets combination indicating - (owner) (group) (evryone)
+each triplet has spaces for 3 permissions (read.write.execute) or (r.w.x)
+(chmod) command is used to modify file permissions with its options.
+
+
+

@@ -1,0 +1,6 @@
+sticky bit
+1)mainly used in dir
+2)octal code 1 will occupy the first digit out of 4
+3)represented by t symbolically
+4)we know to delete files we only need rx permissions on directories and do not need any extra file permissions to delete that file inside that dir.
+But if we (on sticky bit) then we can only delete those files we have (write) acces to or (owns) it

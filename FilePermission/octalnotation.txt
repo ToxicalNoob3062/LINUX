@@ -1,0 +1,9 @@
+file permissions can also be represented in octal number system by using (stat file) command
+
+octal conversion from triplet ->(r.w.x)->(4.2.1)->7
+
+file permissions of /etc/passwd:
+symbolic pattern -> - (rw-) (r--) (r--)
+octalpattern     -> 0 (4+2+0) (4+0+0) (4+0+0) -> 0644 -> 644
+
+(the first 0 in octal can represent special permissions)

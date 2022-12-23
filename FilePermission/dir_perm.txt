@@ -1,0 +1,11 @@
+permissions of dir rules over the file permissions inside it.So if a dir has write permission we can delete a file existing inside that dir , which do not have permission to be get deleted!
+
+read perimission in a dir refers to we can only see its content using \ls
+
+write permission in dir refers to create or delete file but there is an exceptional in this case to write by creating or removing files we need to acces the directory first!
+
+but the access is ensured by x or execute command in dir permissions which help to reach inode.Thats why only w as permission will not do anything!
+it depends on x or execituve permission.
+
+if only x is permitted than we can do cd and get into that dir but couldnt write and rem files.
+

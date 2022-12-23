@@ -1,0 +1,5 @@
+1)strace -c (command) to check which (systems-calls) are being done by process.
+
+2)to check errors ellaborately of 1) and print them to a file
+(strace  -e (open,stat,access) -o (calls.txt)  your-prog) 
+             errored syscalls      outputfile  linux-command

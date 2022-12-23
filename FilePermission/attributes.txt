@@ -1,0 +1,10 @@
+(lsattr file)-> to see files attributes (but for some files its flagged)
+run (lsattr) as sudo to get permit for flagged files and dir.
+
+(chattr (+-=atrr) (file or dir))-> to toggle a file or dir attributes.
+
+a->only append is allowed
+i->make file immutable and frozen
+A->stops modifying access time.
+
+you can use (-R) option for both commands to apply changes to directory recursively.
