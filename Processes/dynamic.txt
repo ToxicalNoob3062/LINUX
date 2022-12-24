@@ -1,0 +1,21 @@
+(top) helps to see overall process conditions of system inreal time.
+
+keyboard shortcuts:
+(press 1 after running top command to see all threads)
+(d to ensure delay value)
+(press x to toggle to ensure cpu column highlighting)
+(press y to toggle to run for highlighting running task)
+(press b mutiple times to bold for enabled x and y options)
+(SHIFT + (< or >) greater than and smaller than) to shift columns
+(R) to (toogle sort) the column in ascending
+(h) to open help menu
+(e) to change memory size units
+(U) to filter by user
+(F) to enter field management screen and (right arrow >) to select and change field order (space bar) to select or unselect field.
+(W) to change saved configuration.
+
+(top -d t -n i -b > output.txt) will capture i refreshes of the top screen by giving pause of t seconds between each refresh and save it to the file in batches(b).
+
+(grep rsyslogd output.txt) to see differrence between i refreshes
+
+(you can also use htop for more awsome and colorful viewing and auto signal sending searching and so on!).

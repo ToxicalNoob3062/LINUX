@@ -1,0 +1,13 @@
+(pidof (program or command)) gives all possible pid regarding that command.
+(kill) command used to send signals to a specific process
+(kill -l) displays all possible signals you can send using kill command.
+(kill -signalNumber PID)
+(kill -siganlNAME pid1 pid2 pid3) you can also give multiple process id and use signal name instead of signal number.
+*remeber to write siganlNAME in capitals and all signal names has SIG infront of them. you can avoid that.
+
+if (pid1 pid2 pid3 belongs to same prgram you can use kill all).
+(killall -signal progname)
+
+
+(pkill -signalNumber (partialname of prgram)) if we dont want to write full process name we can use pkill or partial kill to send signal to all the processes that matches the partial program name pattern.
+also kills all process that matches the name.

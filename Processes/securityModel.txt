@@ -1,0 +1,11 @@
+a process is only created when you run shell scripts command.
+A process may use mutiple threads to work smoothly.
+
+two types of command 1)shell inbuilt 2)shell script
+we can see this types by typing (type command)
+(ps -ef | less) helps you to see the process.
+(1st process is parent process witha pid1 created whenn system reboots)
+(parent process has many child process by fork() syscalls)
+(but every child process has only one parent process)
+
+daemon,zombie,orphan are also 3 special type of processes.

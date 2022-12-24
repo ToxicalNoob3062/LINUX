@@ -1,0 +1,9 @@
+processes can be executed in two types:
+1) foreground
+2) background -> to run a command or program in background add (&) at the end after writing command and redirect it output pipelines to (/dev/null) known as the blackhole of linux files-system which deletes automatically if anything is written into it.
+3) only one forground process can run at a time until the output comes back to the terminal.
+4) many background process run at a time in background without interrupting the commandline.
+5)system background process run as (daemon process ??) to provide services to others process!
+6)the app we open on GUI in linux are also belonging to background process.
+
+

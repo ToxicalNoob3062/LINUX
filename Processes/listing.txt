@@ -1,0 +1,13 @@
+(ps) shows process status
+
+(-e) shows all processes that are currently running
+(-f) to show full information abou processes
+(-aux) to show cpu memory and other resource usage
+(--sort=-%mem) to sort descending by memory usage
+(-u) to see the process created for a specific user
+
+(pgrep command) greps if the command process is running or not and if found returns the pid.
+
+(pgrep -u user command) to see if that user has a process for that specific command.such as (pgrep -u root init)
+
+(pstree | less) used for showing processes in tree like format. 

@@ -1,0 +1,7 @@
+1->start a long going background process
+2->(jobs )command will help you to see the background processes launches by you and also show their current status .
+3-> if execution is complete results shown by job is done.
+4->to take a background proces to foreground use (fg jobid)
+5->to resume a background process use (bg jobid)
+6->shut downing the terminal will kill process of both foreground and background
+7->(nohup sleep 123 &) keeps the process running with out  terminating on terminal closing and saves it output to pwd or to home dir of user if no write permisssion is present in pwd.
