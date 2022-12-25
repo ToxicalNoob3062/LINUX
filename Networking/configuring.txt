@@ -1,0 +1,20 @@
+#switching on and off running network interfaces
+(ifconfig interface-name (up or down)) or 
+(ip link set interface-name (up or down))
+
+#changing IP and network mask of a specific network interfaces
+(ifconfig interface-name newIP/newMask) or
+(ip address add/del interface-name newIP/newMask)
+
+#changing default gateway
+(route (del or add) default gw (deafult-gateway))
+(ip route del default)->delete default gateway
+(ip route add deafult via (new-default-gateway))-> add new gateway as default
+
+#changing MAC address  ( ether 00:15:5d:25:ed:43)
+a)using ifconfig :
+  1)down the network-interface you want to change the MAC for
+  2)change the mac by using:
+  (ifconfig interface-name hw ether (new-MAC address))
+  3)uo the network interface
+b)using ip : (ip link set dev interface-name address (new MAC address))

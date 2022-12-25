@@ -1,5 +1,5 @@
 1->start a long going background process
-2->(jobs )command will help you to see the background processes launches by you and also show their current status .
+2->(jobs )command will help you to see the background processes launches by you or the stopped process and also show their current status .
 3-> if execution is complete results shown by job is done.
 4->to take a background proces to foreground use (fg jobid)
 5->to resume a background process use (bg jobid)

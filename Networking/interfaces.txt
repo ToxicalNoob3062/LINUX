@@ -1,0 +1,14 @@
+#you can use (ifconfig or ip) to view network interfaces
+(ifconfig) or ( ip link show up) to view active network interfaces
+(ifconfig -a) or (ip a s) to viewall active and inactive interface
+in results of above command lo->local e->internet {network interfaces}
+
+#to see gateways using the route command
+(route or (route -n) or (ip r s))
+(UG row indicates the default gateway) in the output of all routes.
+
+#to see current dns servers.
+(cat /etc/resolv.conf)
+(resolvectl dns)
+
+#(systemctl) doesnot work in wsl so use (systemvinit) command

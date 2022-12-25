@@ -1,0 +1,9 @@
+found in ls /etc/netplan
+
+create a netplan file for your static net configurations
+(vi /etc/netplan/plan1.yaml)
+
+yaml files have their own specific format so you need to write them properly and validate by a online yaml valid editor
+
+to apply the network plan or changes written in yaml use:
+(netplan apply)
