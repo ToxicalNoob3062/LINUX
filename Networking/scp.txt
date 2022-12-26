@@ -1,0 +1,15 @@
+Let you are on pc X (client) and you want to communicate to server Y you can transfer files between them using SCP protocol.
+
+1)To send file from client to server:(x->Y):
+{scp -P (portno) (filetobesend) username@ip:(filetobesaved)} for files
+{scp -r -P (portno) (filetobesend) username@ip:(filetobesaved)} for dir
+here the (filetobesend) path belongs to the current directory and the other path (filetobesaved) is according to server computer.
+
+2)To recieve file from server and upload to client: (y->x):
+you can also ask the server to give you some files.
+{scp -P (portno) username@ip:(filetobesend)  (filetobesaved)} for files
+{scp -r -P (portno) username@ip:(filetobesend)  (filetobesaved)} for dir
+
+3)if you know both username and ip of client and server you can establish a live connection between them after putting both their password:
+{scp [options] usrname1@ip1:path usrname2@ip2:path}
+!!!!file goes from usr1->usr2 and vise-versa

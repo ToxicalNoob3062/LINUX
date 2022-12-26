@@ -1,0 +1,6 @@
+use (ping) command to check the connection between two servers
+(-c packets) to specify how many packetss you want.
+(-q) to get a summary
+(-i time) to change the interval time between packet sending.
+(-t router) to discover if router  exists.
+(-n) avoids showing names from where data packets are coming.

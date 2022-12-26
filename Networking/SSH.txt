@@ -1,0 +1,8 @@
+(nmap -Pn port ip4) to see if servers port is open to receive ssh connection.
+(ssh usrname@ip4) to connect to  a specific server.
+(use windows alias to connect to any windows pc after configuring it properly)
+(sudo iptables -vnL) to check if all firewalss are down in client linux .If all are ACCepted then there is no firewall issues.
+(sudo ufw allow ssh) to allow firewall to produce ssh connection.
+(/etc/ssh/sshd_config) is the server config file for ssh .
+
+you can edit the sshd_config file to (../secured_sshd) to increase security.
