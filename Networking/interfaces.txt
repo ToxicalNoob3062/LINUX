@@ -11,4 +11,3 @@ in results of above command lo->local e->internet {network interfaces}
 (cat /etc/resolv.conf)
 (resolvectl dns)
 
-#(systemctl) doesnot work in wsl so use (systemvinit) command
