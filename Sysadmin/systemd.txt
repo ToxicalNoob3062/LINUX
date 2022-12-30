@@ -1,0 +1,23 @@
+system management daemon
+1) starts as PID 1 and then take control over dsik and filesystems.
+2) loads after kernel is loaded 
+3) runs all other services paralelly
+
+systemd --version
+systemd-analyze ->provides the time it took to start during boot process
+systemd-analyze blame -> to see how much time was taken by each process
+
+systemctl used to manage systemd services
+
+systemctl status service ->to check the status of a service
+systemctl enable service ->to ensure auto start during sysboot
+systemctl start service -> to start a service
+systemctl stop service -> to stop a service
+systemctl disable service -> to disable autostart for service during sysboot 
+systemctl restart service -> to restart a service which is already on.
+systemctl is-enabled service -> to check if the service is enabled.
+systemctl mask service -> will freeze the service #(no manual /auto start)
+systemctl unmask service -> will unfreeze the service.
+
+When you run the (systemctl list-units) command, it will list all units that are currently loaded in the system, along with their type, status, and other information.Units are objects that represent system resources, such as services, sockets, devices, and mount points. 
+you can use the (--type) option to list only units of a specific type, such as (service) .

@@ -1,0 +1,26 @@
+                       dd->disk destroyer
+
+(dd if="inputdrive" of="outputdrive" status="progress")
+
+if (of="outputdrive") then output will be over written to disk or partision
+if (of="disk.img") will overwtite if disk.img exist or will create a new file disk.img which will consume the memory of external disk instead of overwriting the disk in which the file is being copied by dd command
+
+the dd command copies both empty and filled spaces. So it will consume the full store equal to your external drive capacity
+
+(dd if=disk.img of=/dev/sda)
+to copy all the data of a disk image to a disk.
+
+(dd if=input_file of=output_file conv=sync)
+The (sync) option is an option that can be used with the dd command to synchronize the data and metadata buffers of a file system after the data has been written.
+
+(dd if="/dev/sda" of="/root/mbr.dat" bs=512 count =1)
+In this case, the dd command will read the first 512 bytes of the first disk and write it to the mbr.dat file. This will create a copy of the Master Boot Record (MBR) of the first disk. The MBR is a special type of data structure that is used to boot an operating system on a computer, and it is stored in the first sector of the disk.
+
+(dd if="/root/mbr.dat" of="/dev/sda" bs=512 count =1)
+to copy the master-boot-record from mbr.dat file to a speicific drive.
+
+you can do the same for a iso file to boot a linux distro from usb 
+(dd if="/root/gile.iso" of="/dev/usb" status="progress")
+will send the iso file content setted up to usb for booting.
+
+

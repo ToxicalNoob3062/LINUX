@@ -1,0 +1,17 @@
+set -> to list all variables
+unset variable -> will remove the varibale from that list
+declare -r var=val -> setting constant variable
+
+#if variable doesnt exists it will return a blak space
+win=${os}11 to append the number with existing variable using variable expansion.it works like variable insertion in text.
+
+'quoting system'
+(\ )-> used to ignore scpecial charcters like (&,&&,|,!,#) etc.
+example: echo c\/d\/e\/f ->c/d/e/f
+
+('') -> single quote do not expand variable value in it and auto escapes special char.
+
+("")-> double quotes expand varibales , allows single quotes, auto escape special char but (\$var) will stop expansion of varibale in ""
+and also (\") to use a double quote inside a double quote.
+example: echo " $w1 && |\"\" , '' \$w2 \& & \$w3 \/4"
+

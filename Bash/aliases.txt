@@ -1,0 +1,6 @@
+\(alias) if alias name and command name is same and you want to execute the command instead of alias.
+
+format:
+to make it permarent save it in .bash_aliases
+alias aliasname="command to run".
+unalias aliasname -> to remove it .

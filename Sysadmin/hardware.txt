@@ -1,0 +1,50 @@
+
+(lshw):The lshw command can be used to display information about the processor, memory, motherboard, hard drives, and other hardware components of a computer. It can also display information about the firmware, BIOS, and other software components that are related to the hardware.
+
+(lshw -C network) gives info about network or WIFI
+
+
+(inxi -FDpx)->this command is more awsome
+To use the inxi command, you will need to open a terminal or command prompt and enter the inxi command followed by any options or arguments that you want to use. For example, to display a detailed list of all of the hardware and software components of the computer, you can use the following command.
+
+(lscpu -e):The lscpu command can be used to display information about the architecture, model, speed, and other details of the processor. It can also display information about the number of processor cores, threads, and other details of the processor.
+
+The (lspci -vm) command can be used to display information about a wide range of PCI devices, including graphics cards, network cards, storage devices, and other hardware components. It can also display information about the drivers that are associated with each device.
+
+(lsusb -v) is a useful tool for system administrators and advanced users who need to gather information about the USB devices that are connected to a computer.
+
+(hdparm -i drivename): to get information about a specific drive. (-I) instaed of (i) for more details
+
+(hdparm -t --direct /dev/sda) will show read and write speed for disk a (mb/s).you can use it to compare two hard drives.
+
+(dmidecode): gives info about rams and memories;
+
+(iw list):This will display a list of the wireless interfaces that are available on the system, along with information about each interface, such as the interface name, the wireless protocol that is being used (e.g., 802.11a, 802.11g, etc.), and the frequency bands that are supported by the interface.
+
+(lshw -html > hardware.html) to store hardware informations in a html file.
+
+the /proc dir contains all infos about our hardwares
+/proc/cpuinfo -> contains info about memory
+/proc/memoinfo -> contains all info about memo.
+/proc/partisions -> to see disk partisions
+/proc/versions -> too see version of running kernel
+
+RAMS:(dmidecode -t memory)
+max-RAMS: RAMS | (grep -i "max")
+installed RAMS: RAMS | (grep -i "size")
+used RAMS: (free -n)
+
+WIFI:
+iw list
+lspci | grep -i "wireless"
+cat /proc/net/wireless
+ifconfig -> wlo1
+iwconfig wlo1
+
+HARDDRIVES:
+(fdisk -l) or (lshw -C disk)  to see all HARDDRIVES
+(fdisk -l /dev/sda) to see info of a specific drive
+
+BATTERY:
+(acpi -bi) check charge and current status
+(acpi -V) check about heat and temp and cooling of battery.

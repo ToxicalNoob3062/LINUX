@@ -1,0 +1,7 @@
+we can also sync files and dir using ssh
+1)server needs to have read access on client
+2)client needs to have write access on server 
+according to the user they are logged in into the server.
+
+(rysnc -av -e "ssh -p 22" --delete usrnme@sip:spath cpath) and vise versa!!.
+use --delete only if you want to keep the sync between two directories exactly same! because it will synchronize and also delete extra files.

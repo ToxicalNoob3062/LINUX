@@ -1,0 +1,9 @@
+(dpkg --info filename.deb) so see about the content of a .deb installation content beofore installing it.
+(sudo dpkg -i filename.deb) to install the .deb file
+(dpkg --get-selections) to get all installed package.
+(dpkg-query -l) to get detailed description about all intalled packages.
+(dpkg -L (pkg-name)) to get list of all files belonging to that package.
+(dpkg -S (filename)) to get the package name from which the file belongs. 
+(sudo dpkg -r pkgname) to remove the pkg
+(sudo dpkg -r pkgname) to remove the pkg with its config files.
+

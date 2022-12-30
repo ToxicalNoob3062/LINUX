@@ -1,0 +1,31 @@
+cron is a daemon runned bby root for task automation in linux
+to operate cron we usally use crontabs 
+
+crontab files:
+1)file that contains info about cron jobs is:
+/var/spool/cron/crontabs/
+2)file that holds the crontab command:
+/usr/bin/crontab
+3)for configuration of crontabs:
+/etc/crontabs
+4)for seeing the logs of cron jobs
+tail -f /var/log/syslog
+
+2 types of cron jobs:
+a)individual cron jobs:
+(crontab -l) list all cron jobs for user
+(crontab -e) edit the cron tab of active user
+(crontab -r) to remove cron tabs
+b)system cron jobs;
+
+root supremacy
+root can enable disable cron for a specific user, add a chron job for a user or delete his whole cron job file list.
+(-u user) to do anything that can a user do.
+
+in cron tab files write lines in a specific format
+m h dm m dw command.-> standard way.
+@yearly command. ->non standard way.
+
+to defined time in a standarrd way you can take help of tools like:
+1)https://crontab.guru/
+2)https://crontab-generator.org/

@@ -1,0 +1,10 @@
+sudo apt update,install,upgrade,autoremove,remove,
+you can also install debfile giving its path:
+(sudo apt install /dir1/dir2/debfile)
+(sudo apt purge pkg) to remove including config files.
+
+lost of etra archive and deb files are there in
+(ls -l /var/cache/apt/archives/) we can clean it using 
+(sudo apt clean)
+
+(apt show pkgname) will shows info about that pkg.

@@ -1,0 +1,13 @@
+used for downloading large files.
+wget --limit-rate=100k -c -P (download-dir) url;
+wget -i (file) -P (dirpath). -> to download all links in file in that dir.
+
+(-c) to resume
+(-b) to run in background
+(tail -f wget-log) to check download status in background.
+
+
+to zerox copy a site page:
+(wget -mkEpnp url)
+
+

@@ -1,0 +1,20 @@
+checking ports in client pc:
+
+check all open ports
+(sudo netstat -tupan) | grep :(port) or (sudo ss -tupan)
+0.0.0.0->listening to all ip addresses of host
+
+lsof->it is a utility that displays information about files that are open by processes running on the system. 
+(lsof) gives list of all open files
+(lsof -u usrname) opened files by usr.
+(lsof -u ^usrname) not opened files by usr.
+(lsof -c command) oppend by the process created by a specific command.
+(sudo lsof -iTCP -sTCP:LISTEN -nP).
+The -iTCP option tells lsof to limit the output to information about TCP network connections, and the -sTCP:LISTEN option tells it to further filter the output to show only connections that are in the listening state.
+-nP converts name to number.
+(-iTCP:port) if you need a specific port instead of all tcp port.
+
+checking ports in server pc:
+(telnet s-ip port) to check if a port is open in remote server.
+(sudo nmap ip) to check all active ports of server 
+(nmap -p port ip) to search for a specfic ip

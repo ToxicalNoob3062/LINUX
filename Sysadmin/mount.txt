@@ -1,0 +1,18 @@
+The (mount -l -t ext4) command is used to list all the ext4 file systems that are currently mounted on a Linux system.
+
+The /dev/sdb device file represents a block device, such as a hard drive or a USB flash drive, that is connected to the system.
+
+or (sudo fdisk -l) or (lsblk) to do the same
+
+(sudo mount /dev/sdb ~/usb) to mount usb drive
+
+(sudo umount -l mounted-dir) to unmount partial drives from mounted dir.
+(-l) options secure to unmount automatically when the disk or drive is not doing any io operations.
+
+(df -h) command is awsome to see about your disk spaces and usage and mount points of (pwd).
+
+(isoinfo -l -i slides.iso) to see what inside a iso file without extracting or mounting it.
+
+(sudo mount slides.iso iso/ -o loop) use -o loop for mounting non block devices such as .iso is a file not a block device.
+
+(gparted) command helps u to view your linux disk graphically.

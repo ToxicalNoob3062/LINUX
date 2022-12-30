@@ -1,0 +1,10 @@
+1)/etc/anacrontab specifies anacron jobs and stores it.
+2)/var/spool/anacorn/ specifies timestamps for jobs here after its done for future uses.
+
+the format of anacron:
+day delay (jobname) command
+
+the command will run after every x days with an delay of y mins after sytemboot and store the timestamp in 2nd dir with its jobname.So that seeing this time it can decide in future again when to run.
+
+
+
