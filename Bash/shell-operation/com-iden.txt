@@ -1,0 +1,5 @@
+In command identification process the kernel can get two types of command. 
+
+a)simple->single line and sometimes separated by control operators to terminate previous command using ; or any control operator (&&) and make a multiline command in single line.
+
+b)complex-> separated by programming keywords and ends with reverse bash key words.

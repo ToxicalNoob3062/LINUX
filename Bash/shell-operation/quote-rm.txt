@@ -1,0 +1,6 @@
+the quote is removed which is unqoted and also \ to cancel the special-properties of a (specific exapansion) and then remove this quotation and blackslash after the work is done in 3rd step. 
+
+if you start a quote until you end it all the part will inside it will be the string including the other type quote.
+
+rahat@ZeroFreeze:~$ echo "'h'"'"w"'
+-> 'h'"w"

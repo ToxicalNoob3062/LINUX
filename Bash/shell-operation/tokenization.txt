@@ -1,0 +1,7 @@
+bash use meta char to break the command into tokens.
+
+metachars->space,tab,newline,|,;&()<>
+
+when the input line is splitted into parts using metachars as IFS are consideres tokens.Among them:tokens->2 types
+a)words-> quoted and no metachars.
+b)operator->only matters if they are unqoted. contain atleast one metachar!
