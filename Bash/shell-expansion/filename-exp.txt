@@ -1,0 +1,19 @@
+also called globbing (quotting not allowed here)
+* ->matches any string including emptiness
+? ->matches any single char
+[] ->matches any single charcater within a range.
+
+(ls fancy*) will list all file or dir start with fancy because after that it can be anything which is denoted by *
+
+(ls fancy*.js) that means in middle it could be anything.
+
+(ls fancy[123].js) represents that it can be any single char of the string inside [] . -> fancy1.txt fancy2.txt fancy3.txt
+
+also works with ranges [1-3] or [A-N] or [c-k] will expand sequentially.
+
+nesting of this ranges inside [] also possible:
+[f-h][a-zA-Z0-9]*.txt ->indicates that 2nd [] can be replace by any one char among all the collections of char of these 3 ranges.
+
+ls [^0-9]*.txt ->the first char cant be 0-9! and after that it can be anything.
+
+

@@ -1,0 +1,13 @@
+brace-expansion:
+
+a)string lists
+Will separate (,) separated values by space after concating prefix and suffix. such as command exp=(prefix{v1,v2,v3,(exp2)...}suffix)
+->command prefix+v1+suffix prefix+v2+suffix ....
+you can also do nesting of brace expansion.
+
+b)sequence lists
+{0..100..3} print 0 to 100 with an increment of 3 each time.
+{a..z..n} print a to z by skipping (n-1) characters each time.
+brace expansion priority is more than variable expansion.
+you can also do this sequence listing in descending order.
+

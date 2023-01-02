@@ -1,0 +1,5 @@
+#if variable doesnt exists it will return a blank space
+win=${os}11 to append the number with existing variable using variable expansion.it works like variable insertion in text.
+
+${var} will expand the varibale to its value. works inside quotation!
+$var dont work inside quotation.

@@ -1,0 +1,12 @@
+arithmatic exoansion is for doing mathematical calculations
+
+1) dealing with integers:
+$((arithmatic expression)) ->will return the solve as output
+
+2) dealing with decimals:
+(echo "scale=2; 6/4" | bc ) ->will solve the exp upto 2 decimal places.
+or (bc <<<"scale=3;22/7") ->3.142.
+
+3) defining it to a variable:
+let var=4*6 -> echo var -> 24 
+

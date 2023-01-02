@@ -1,0 +1,4 @@
+it just separates the fields in a line by IFS after parameter expansion.
+
+*wordsplit dont work for quotted variable or text.
+touch "$x" will not do word-splitting and create only one file.

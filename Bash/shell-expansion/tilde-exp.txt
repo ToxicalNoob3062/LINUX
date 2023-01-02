@@ -1,0 +1,9 @@
+~->home
+~user ->go to home of a specific user
+~+ -> represents pwd
+~- -> previous working directory
+${var^^} ->change variable value to upper characters
+${var,,} ->change variable value to lowercase
+${var:-(default)}->to work with defaultvalue if var is unset.
+${var:=(default)}->set defaultvalue to variable atfirst then use it.
+ 

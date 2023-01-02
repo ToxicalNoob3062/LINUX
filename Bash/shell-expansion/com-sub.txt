@@ -1,0 +1,5 @@
+command subtitution means to replace the command output where the command is written.
+
+can be done in 2 ways:
+a)`command`
+b)$(command)

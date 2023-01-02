@@ -1,0 +1,6 @@
+process subtitution means to pass the output of a command as a file to another command.
+
+for example: diff -y <(command1) <(command2)
+
+so it will pass the output of two commands as a file to diff command to see if there is any change between the output of two command side by side.
+

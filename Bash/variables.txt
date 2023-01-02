@@ -2,9 +2,6 @@ set -> to list all variables
 unset variable -> will remove the varibale from that list
 declare -r var=val -> setting constant variable
 
-#if variable doesnt exists it will return a blank space
-win=${os}11 to append the number with existing variable using variable expansion.it works like variable insertion in text.
-
 'quoting system'
 (\ )-> used to ignore scpecial charcters like (&,&&,|,!,#) etc.
 example: echo c\/d\/e\/f ->c/d/e/f
