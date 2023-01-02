@@ -1,0 +1,7 @@
+brace-expansion:
+a)string lists
+Will separate (,) separated values by space after concating prefix and suffix. such as command exp=(prefix{v1,v2,v3,(exp2)...}suffix)
+->command prefix+v1+suffix prefix+v2+suffix ....
+you can also do nesting of brace expansion.
+
+b)

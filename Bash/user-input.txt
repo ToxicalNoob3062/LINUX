@@ -1,0 +1,39 @@
+a)parameters using names:
+done by command (read)
+the read command input is generally stored in a $REPLY variable if no variable is passed as parameter.
+(read var1 var2 var3) will accept 3 words separates by spaces.
+
+(-s) option will not display the value while user is typing
+(-p "text") to include a text about the needed input.
+
+b)parameters using numbers:
+script val1 va2 val3 ...
+$0     $1   $2   $3 ...
+add default value -> ${2:-"default val"}
+after 9 the positional params are represented like this ${10}
+
+c)parameter using special char:
+there are some speacial parameters in bash scripts, 
+$? -> execution result of last executed command on the foreground
+$# -> number of parameters
+$$ -> process id
+$@ and $* -> represents all suplied arguement in a string format.
+run (~/Compilations/Bash/pp.sh a b c 1 2 3) to see a live demo.
+
+
+                  lesson2: { $@ vs $*}
+($@ =$*)-> "$1 $2 $3": (concat and split)
+0)script-> touch $@
+1)command->script "my bom" "boot" "bum boo"
+2)execution->touch $@ -> touch "my boom boot bum boo" 
+3)split-> touch "my" "boom" "boot" "bum" "boo"
+4)result-> will create 5 files in current dir.
+
+("$@")-> "$1" "$2" "$3" : (use the splited words directly).
+4)res: will create 3 files in current dir.
+
+("$*")-> "$1,$2,$3" : (concats using IFS variable):
+Here IFS=, in script.
+4)res:will create 1 file in current dir.
+
+

@@ -1,0 +1,56 @@
+#!/usr/bin/env bun
+function braceExpansion(exp) {
+  return expand(exp).flat();
+}
+
+function expand(exp) {
+  const terms = split(exp);
+  for (let term of terms) {
+    if (term.includes("{")) {
+      const res = [];
+      const parts = pieces(term);
+      const mid = expand(parts[1]);
+      for (let comp of mid) {
+        if (typeof comp == "string") {
+          res.push(parts[0] + comp + parts[2]);
+        } else {
+          for (let mini of comp) res.push(parts[0] + mini + parts[2]);
+        }
+      }
+      terms[terms.indexOf(term)] = res;
+    }
+  }
+  return terms;
+}
+
+function split(express) {
+  let last = -1;
+  let lock = 0;
+  const res = [];
+  for (let i = 0; i < express.length; i++) {
+    const chr = express[i];
+    if (chr == "{") lock++;
+    if (chr == "}") lock--;
+    if (!lock) {
+      if (chr == ",") {
+        res.push(express.slice(last + 1, i));
+        last = i;
+      }
+    }
+  }
+  res.push(express.slice(last + 1, express.length));
+  return res;
+}
+
+function pieces(exp) {
+  let end = exp.length - 1;
+  const part = [];
+  while (end > -1 && exp[end] !== "}") end--;
+  const start = exp.indexOf("{");
+  part[0] = exp.slice(0, start);
+  part[1] = exp.slice(start + 1, end);
+  part[2] = exp.slice(end + 1);
+  return part;
+}
+
+console.log(...braceExpansion(process.argv[2]));
