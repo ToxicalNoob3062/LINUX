@@ -1,4 +1,7 @@
 #!/usr/bin/env bun
+//prefix{m1,m2,m3}suffix ->only this format is allowed.
+//⚠️{couldn't do sequence listing {1..2} or {a..b}
+
 function braceExpansion(exp) {
   return expand(exp).flat();
 }
