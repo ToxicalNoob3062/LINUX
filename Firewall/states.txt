@@ -1,0 +1,4 @@
+-m state --state NEW,ESTABLISHED,INVALID...
+the packets are in differrent states when they are travelling from one computer to another. We can track this state changes of packet using -m state.
+
+refer to (./states.png)

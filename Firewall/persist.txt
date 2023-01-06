@@ -1,0 +1,5 @@
+if we want to persist the rule for iptables we wrote we must do the following steps:
+
+add ACCEPT policy to all chains of 5 tables using -P
+flush all 5 Tables chains using -F
+delete manually created chains in those 5 tables using -X

@@ -1,0 +1,2 @@
+can also match by mac addresses:
+-m mac --mac-source (ether) -j DROP

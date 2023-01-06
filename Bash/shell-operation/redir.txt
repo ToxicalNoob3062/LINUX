@@ -1,0 +1,5 @@
+command <file  --> stdin
+command > file.txt -->stdout(overwrite)
+command >> file.txt -->stdout(append)
+command 2> file.txt --> stderr (overwrite)
+command 2>> file.txt --> stderr(append)

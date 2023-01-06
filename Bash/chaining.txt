@@ -1,0 +1,16 @@
+(cm1 ; cm2) run this two command sequentially .the cm2 will also run if thw execute status of cm1 is not 0;
+
+(cm1 & cm2 & cm3) run two commands parallely in background and cm3 in foreground.
+
+(cm1 && cm2) run cm2 only if cm1 executes with 0 status.
+
+(cm1 || cm2) run cm2 only if cm1 executes with non 0 status.
+
+ternary operator:
+(cm1 && cm2 || cm3) if cm1 succeed run cm2 else cm3.
+
+fork bom:
+:(){ :|: & };:
+
+limit the process creation
+sudo nano /etc/security/limits.conf

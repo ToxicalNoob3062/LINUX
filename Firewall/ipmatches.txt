@@ -1,0 +1,10 @@
+-s ->source ip 
+-d -> destination ip
+
+the first three octets (192.168.1) of the IP address are fixed, which means that all of the IP addresses in the range "192.168.1.0/24" are part of the same network.
+
+The fourth octet (0 through 255) is used to specify the host portion of the IP address, which is used to identify a specific device on the network. The host portion can have any of the 256 possible values, which allows for up to 256 different devices to be identified on the same network.
+
+The number of possible values for the host portion of an IP address is determined by the number of bits that are used to specify the host portion. In this case, there are 8 bits in the host portion, which means that there are 28 (256) possible values.
+
+Each bit in the host portion can be either 0 or 1, so there are two possible values for each bit. Since there are 8 bits in the host portion, there are 28 (256) possible combinations of 0s and 1s.

@@ -1,0 +1,14 @@
+each table contains specific chains for manupulating a specific ip table.those chains are manupulated by this options.
+
+options for chaining a chain inside a table:
+A->append
+I->insert ->iptables -I chain num ->(num indicate in which line we want to insert the rule.)
+L->listing ->to list all chains or a specific one ->iptables -L INPUT
+(will only display the input chain from filter table.)
+F -> flushes the selected chain and deleted all rules in that chain.
+Z -> restart the byte and packet count to 0
+N -> user defined chain
+X -> delete user defined chain
+P -> setting default policy
+D -> delete a rule in a specific chain.
+R -> replacing a rule of a specific line in a specific chain.

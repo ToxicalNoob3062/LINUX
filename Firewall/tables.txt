@@ -1,0 +1,10 @@
+iptables -L ->filter table
+iptables -t -nat -L -> nat tables
+
+like this there are 5 tables.
+
+view specified rules for a table:
+iptables -t table -L -vn
+
+
+

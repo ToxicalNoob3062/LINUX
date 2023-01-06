@@ -1,0 +1,5 @@
+-p protocol ->to specify ports such ad (udp,imp,tcp)
+--dport 22  ->to specify 22 as destionation port.
+--sport 23  -> to specify 23 as source port.
+-m multiport --dport or --sport p1 p2 p3 ... -> to block or aceppet mutiple ports at once.
+  
